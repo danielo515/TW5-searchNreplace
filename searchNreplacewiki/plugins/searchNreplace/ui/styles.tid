@@ -1,0 +1,11 @@
+created: 20150409181359332
+modified: 20150409182956438
+tags: $:/tags/Stylesheet
+title: $:/plugins/danielo515/searchNreplace/styles
+type: text/css
+
+  .tc-edit-controls {
+  border: 1px solid #cccccc;
+  border-top: 0px;
+  padding: 4px 8px 4px 8px;
+}

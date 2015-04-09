@@ -1,0 +1,10 @@
+created: 20150409182035279
+modified: 20150409182544663
+tags: $:/tags/EditControls
+title: $:/plugins/danielo515/searchNreplace/ui/controls/replace
+type: text/vnd.tiddlywiki
+
+<$edit-text tiddler="$:/state/searchNreplace/search" tag="input" default="" placeholder="search"/> <$edit-text tiddler="$:/state/searchNreplace/replace" tag="input" default="" placeholder="replace"/> <$button class="button button-tiny button-primary">Replace
+<$action-sendmessage $message="tm-replace" source=<<currentTiddler>> search={{$:/state/searchNreplace/search}} replace={{$:/state/searchNreplace/replace}} global={{$:/state/searchNreplace/global}}/>
+</$button>
+<$checkbox default="yes" unchecked="no" checked="yes" field="text" tiddler="$:/state/searchNreplace/global">Global</$checkbox>

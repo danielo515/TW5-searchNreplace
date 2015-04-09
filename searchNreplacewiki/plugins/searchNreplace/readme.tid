@@ -1,0 +1,12 @@
+title: $:/plugins/danielo515/searchNreplace/readme
+
+This is searchNreplace plugin for ~TiddlyWiki.
+It provides an additional controls bar on the default tiddler's editor. Currently it only allows you to search and replace text.
+
+!!Using search and replace
+# Put what you want to replace in the first field. This is the ''search string''.
+# Put what you want to put in place of the search string in the second field.
+# Select if you want to do a global search and replacement by checking the global checkbox.
+# Click the replace button.
+
+It ''requires'' at least TW5 core to 5.1.4 or newer.

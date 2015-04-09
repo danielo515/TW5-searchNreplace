@@ -1,0 +1,8 @@
+{
+	"title": "$:/plugins/danielo515/searchNreplace",
+	"description": "searchNreplace for TiddlyWiki",
+	"author": "Danielo Rodriguez Rivero",
+	"core-version": ">=5.1.4",
+	"version":"1.0",
+	"list": "readme"
+}

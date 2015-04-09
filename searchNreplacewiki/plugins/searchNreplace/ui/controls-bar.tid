@@ -1,0 +1,12 @@
+created: 20150409175313556
+list-after: $:/core/ui/EditTemplate/tags
+modified: 20150409182902159
+tags: $:/tags/EditTemplate
+title: $:/plugins/danielo515/searchNreplace/ui/controls
+type: text/vnd.tiddlywiki
+
+<div class="tc-edit-controls">
+<$list filter="[all[shadows+tiddlers]tag[$:/tags/EditControls]]" variable="control">
+<$transclude tiddler=<<control>>>
+</$list>
+</div>
