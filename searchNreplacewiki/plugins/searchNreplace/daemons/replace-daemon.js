@@ -14,7 +14,7 @@ Requires TW >= 5.1.4
 "use strict";
 
 // Export name and synchronous status
-exports.name = "password";
+exports.name = "replace";
 exports.platforms = ["browser"];
 exports.after = ["startup"];
 exports.synchronous = true;
