@@ -1,0 +1,3 @@
+<h1 class=''><a class='tc-tiddlylink tc-tiddlylink-resolves' href='#HelloThere'>HelloThere</a></h1><p>This is searchNreplace plugin for TiddlyWiki.
+It provides an additional controls bar on the default tiddler&#39;s editor. Currently it only allows you to search and replace text.</p><h2 class=''>Using search and replace</h2><ol><li>Put what you want to replace in the first field. This is the <strong>search string</strong>.</li><li>Put what you want to put in place of the search string in the second field.</li><li>Select if you want to do a global search and replacement by checking the global checkbox.</li><li>Click the replace button.</li></ol><p>It <strong>requires</strong> at least TW5 core to 5.1.4 or newer.
+</p>
