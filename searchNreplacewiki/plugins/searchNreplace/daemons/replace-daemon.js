@@ -14,7 +14,7 @@ Requires TW >= 5.1.4
 "use strict";
 
 // Export name and synchronous status
-exports.name = "replace";
+exports.name = "password";
 exports.platforms = ["browser"];
 exports.after = ["startup"];
 exports.synchronous = true;
@@ -25,7 +25,8 @@ exports.startup = function() {
   var text=$tw.wiki.getTiddlerText(event.paramObject.source) || "",
       doGlobal = event.paramObject.global || "yes", // by default do global search and replace
       modifiers = ( doGlobal.toLowerCase() === "no" ? '' : 'g'),
-      regex = new RegExp($tw.utils.escapeRegExp(event.paramObject.search), modifiers),
+      doRegex= event.paramObject.regex === "yes",
+      regex = new RegExp(doRegex ? event.paramObject.search : $tw.utils.escapeRegExp(event.paramObject.search), modifiers),
       //Tiddler to store the result, if not provided use the source
       destination = event.paramObject.destination || event.paramObject.source;
       $tw.wiki.setText(destination,"text",null,text.replace(regex,event.paramObject.replace));
