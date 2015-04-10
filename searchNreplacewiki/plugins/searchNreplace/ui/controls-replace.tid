@@ -9,5 +9,4 @@ type: text/vnd.tiddlywiki
 regex={{$:/state/searchNreplace/regex}}/>
 </$button>
 <$checkbox default="yes" unchecked="no" checked="yes" field="text" tiddler="$:/state/searchNreplace/global">Global</$checkbox>
-</$button>
 <$checkbox default="no" unchecked="no" checked="yes" field="text" tiddler="$:/state/searchNreplace/regex">Use regex</$checkbox>
