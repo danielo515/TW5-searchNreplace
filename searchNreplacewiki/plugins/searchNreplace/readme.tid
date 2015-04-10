@@ -3,10 +3,32 @@ title: $:/plugins/danielo515/searchNreplace/readme
 This is searchNreplace plugin for ~TiddlyWiki.
 It provides an additional controls bar on the default tiddler's editor. Currently it only allows you to search and replace text.
 
-!!Using search and replace
+!!Basic usage
 # Put what you want to replace in the first field. This is the ''search string''.
 # Put what you want to put in place of the search string in the second field.
-# Select if you want to do a global search and replacement by checking the global checkbox.
+# Select if you want to do want replace all occurrences by checking the global checkbox.
 # Click the replace button.
 
+!!Using regular expressions
+Since version 1.2 you are able to use reuglar expressions. To do so just check the `Use regex` checkbox. This allows you to powerfull search and replacements.
+
+You can also use references on your replace string. Use `$1`...`$N` notation to reference capturing groups.
+
+For example, if you have a list like this
+
+```
+A 10
+B 02
+C 20
+D 35
+```
+
+and you want to invert the values, use the following parameters:
+* ''search'': `(\w) (\d+)`
+* ''replace'': `$2 $1`
+This will put what you have captured in the second ''capturing group'' first and the first one in the second place.
+
+The regular expressions should be valid javascript regular expressions.
+
+!!Requirements
 It ''requires'' at least TW5 core to 5.1.4 or newer.
